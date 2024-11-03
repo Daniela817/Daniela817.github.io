@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #e6f0ff; /* Fondo azul claro */
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #007BFF; 
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3; 
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #003f7f; 
+}
+
+/* Sección de cursos */
+.courses {
+    padding: 40px;
+    text-align: center;
+}
+
+.courses h2 {
+    color: #007BFF; 
+    margin-bottom: 20px;
+    font-size: 28px; 
+    letter-spacing: 2px; 
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos */
+    gap: 40px; /* Separación entre cursos */
+}
+
+/* Estilo del curso */
+.course {
+    width: 300px; /* Ajusta el ancho del curso */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    padding: 20px;
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.course img {
+    width: 100%; /* Ajusta para que ocupe todo el cuadro */
+    height: auto; /* Mantiene la proporción */
+    border-bottom: 2px solid #007BFF; /* Bordes del color azul moderno */
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+
+.course h3 {
+    color: #007BFF; /* Color del texto del encabezado */
+    margin: 10px 0;
+    font-size: 20px; /* Aumentado el tamaño */
+}
+
+.course p {
+    font-size: 16px; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0056b3; 
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Iconos de redes sociales */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00bfff; 
+}

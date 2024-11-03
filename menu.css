@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #7ddaff, #7db5ff);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome, .about, .gallery, .testimonials {
+    margin-bottom: 40px;
+}
+
+.welcome h1, .about h2, .gallery h2, .testimonials h2 {
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.about p, .testimonials blockquote {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.about ul {
+    list-style: disc;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.images img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #87CEEB;
+}
+
+address {
+    margin-top: 10px;
+}
+
+#video {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 123, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(71, 78, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+

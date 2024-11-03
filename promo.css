@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00FFFF; /* Fondo color cian */
+}
+
+header {
+    text-align: center;
+    background: #35424a; /* Fondo oscuro */
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #4CAF50; /* Verde */
+}
+
+.alumnos-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.alumnos-section h2 {
+    color: #35424a; /* Color de texto */
+}
+
+.alumnos-section p {
+    color: #555; /* Color de texto */
+    font-size: 1.2em;
+}
+
+.alumnos-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre imágenes */
+    padding: 20px;
+}
+
+.alumnos-gallery li {
+    position: relative; /* Para que los nombres se posicionen sobre las imágenes */
+}
+
+.alumno {
+    width: 115px; /* Ancho de la imagen */
+    height: 115px; /* Alto de la imagen */
+    object-fit: cover; /* Mantiene la proporción sin deformar */
+    border: 5px solid gold; /* Borde dorado alrededor de la imagen */
+    transition: transform 0.2s, box-shadow 0.2s; /* Efecto al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.alumno:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+
+.name {
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Color del texto para que destaque sobre la imagen */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold; /* Mejora la visibilidad del nombre */
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.name:hover {
+    background-color: rgba(76, 175, 80, 0.8); /* Cambia el fondo al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #35424a; /* Fondo oscuro */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilo para el contenedor de frases */
+.quote {
+    display: none; /* Oculto por defecto */
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #35424a; /* Color del texto */
+    text-align: center;
+}
+
+.message {
+    display: none;
+    background-color: #000000; /* Azul fuerte */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.message.show {
+    display: block; /* Mostrar mensaje */
+    opacity: 1; /* Totalmente visible */
+}

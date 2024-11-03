@@ -1,0 +1,104 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #a8e6cf, #9ad5ff);
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #8ae1e5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1.5em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Sección de instalaciones */
+.facilities {
+    padding: 20px;
+    text-align: center;
+}
+
+.facilities h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 2em;
+    background-color: rgba(76, 175, 80, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.facility-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.facility {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.facility:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.facility h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Espacio para imágenes en las instalaciones */
+.facility-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
